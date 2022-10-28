@@ -7,8 +7,8 @@ export default function Header(){
                 FalseRetail
             </div>
             <div id='headerRight'>
-                <div>Home</div>
-                <div>Products</div>
+                <div><a href='/'>Home</a></div>
+                <div><a href="/shop">Products</a></div>
                 <div>Contact</div>
                 <div>cart img</div>
             </div>

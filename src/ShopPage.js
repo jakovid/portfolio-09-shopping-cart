@@ -1,7 +1,11 @@
 import React from "react";
+import Header from "./components/Header";
 
 export default function ShopPage() {
     return(
-        <div>Shop Page</div>
+        <div>
+            <Header />
+            <div>Products</div>
+        </div>
     )
 }
