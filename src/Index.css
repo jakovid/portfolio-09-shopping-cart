@@ -41,3 +41,10 @@
     border-radius: 50px;
     width: 15rem;
 }
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    width: 20vw;
+}

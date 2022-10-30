@@ -1,4 +1,7 @@
-
+import greenhat from '../images/hats/greenhat.jpg';
+import redhat from '../images/hats/redhat.jpg';
+import pinkhat from '../images/hats/pinkhat.jpg';
+import purplehat from '../images/hats/purplehat.jpg';
 
 const hats = [
     {
@@ -6,32 +9,32 @@ const hats = [
         categoryId: 'hats',
         id: 'red-winter-cap',
         name: 'Red Winter Cap',
-        Price: 10.99,
-        image: '../images/hats/redhat.jpg',
+        price: 10.99,
+        image: redhat,
     },
     {
         category: "Hats",
         categoryId: 'hats',
         id: 'green-winter-cap',
         name: 'Green Winter Cap',
-        Price: 10.99,
-        image: '../images/hats/greenhat.jpg',
+        price: 10.99,
+        image: greenhat,
     },
     {
         category: "Hats",
         categoryId: 'hats',
         id: 'pink-winter-cap',
         name: 'Pink Winter Cap',
-        Price: 10.99,
-        image: '../images/hats/pinkhat.jpg',
+        price: 10.99,
+        image: pinkhat,
     },
     {
         category: "Hats",
         categoryId: 'hats',
         id: 'purple-winter-cap',
         name: 'Purple Winter Cap',
-        Price: 10.99,
-        image: '../images/hats/purplehat.jpg',
+        price: 10.99,
+        image: purplehat,
     }
 ];
 
