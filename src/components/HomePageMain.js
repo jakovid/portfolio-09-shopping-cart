@@ -4,9 +4,9 @@ export default function HomePageMain() {
     return(
         <div id='homePageMain'>
             <div id='homePageMainLeft'>
-                <div id='mainTag'>BEST ONLINE STORE OF THE YEAR</div>
+                <div id='mainTag'>BEST FAKE STORE OF THE YEAR</div>
                 <div id='mainText'>We don't do fashion, we are fashion</div>
-                <button id='mainButton'>Shop Now</button>
+                <button id='mainButton'><a href="/shop">Shop Now</a></button>
             </div>
             <div id='homePageMainRight'>
                 <div>IMG HERE</div>
