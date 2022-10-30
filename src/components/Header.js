@@ -10,7 +10,7 @@ export default function Header(){
                 <div><a href='/'>Home</a></div>
                 <div><a href="/shop">Products</a></div>
                 <div>Contact</div>
-                <div>cart img</div>
+                <img src={require('../images/ShoppingCart.png')} alt='shopping cart' />
             </div>
         </div>
     )

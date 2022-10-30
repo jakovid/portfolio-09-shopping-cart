@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import ShopPage from "./ShopPage";
+import HomePage from "./pages/HomePage";
+import ShopPage from "./pages/ShopPage";
 
 export default function RouteSwitch() {
     return(
