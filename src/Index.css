@@ -42,6 +42,11 @@
     width: 15rem;
 }
 
+#store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .productItem {
     display: flex;
     flex-direction: column;

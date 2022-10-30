@@ -6,7 +6,9 @@ export default function ShopPage() {
     return(
         <div>
             <Header />
-            <PopulateStore />
+            <div id='store'>
+                <PopulateStore />
+            </div>
         </div>
     )
 }
