@@ -1,6 +1,7 @@
 import React from "react";
+import ShoppingCart from "./ShoppingCart";
 
-export default function Header(){
+export default function Header({cartItems}){
     return(
         <div id='header'>
             <div>
@@ -12,8 +13,7 @@ export default function Header(){
                 <div><a href="/shop">Products</a></div>
                 <div>Contact</div>
                 <div id="cartContainer">
-                    <img src={require('../images/ShoppingCart.png')} alt='shopping cart' />
-                    <div>0</div>
+                    <ShoppingCart cartItems={cartItems} />
                 </div>
             </div>
         </div>
