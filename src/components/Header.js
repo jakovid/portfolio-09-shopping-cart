@@ -1,7 +1,7 @@
 import React from "react";
 import ShoppingCart from "./ShoppingCart";
 
-export default function Header({cartItems}){
+export default function Header({cartItems, cartVisible}){
     return(
         <div id='header'>
             <div>
@@ -13,7 +13,7 @@ export default function Header({cartItems}){
                 <div><a href="/shop">Products</a></div>
                 <div>Contact</div>
                 <div id="cartContainer">
-                    <ShoppingCart cartItems={cartItems} />
+                    <ShoppingCart cartItems={cartItems} cartVisible={cartVisible} />
                 </div>
             </div>
         </div>

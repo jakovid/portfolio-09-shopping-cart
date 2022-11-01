@@ -94,4 +94,11 @@
     text-align: center;
     margin: 0.5rem;
     padding: 0.5rem;
+    cursor: pointer;
+}
+
+#visibleCart {
+    position: absolute;
+    left: 100px;
+    top: 100px;
 }
