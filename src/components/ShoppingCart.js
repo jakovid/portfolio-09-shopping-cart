@@ -1,5 +1,4 @@
 import React from "react";
-import PopulateCart from "./PopulateCart";
 
 export default function ShoppingCart({ cartItems, cartVisible }){
 
@@ -9,9 +8,9 @@ export default function ShoppingCart({ cartItems, cartVisible }){
     }
 
     return(
-        <>
+        <a href="/checkout">
             <img src={require('../images/ShoppingCart.png')} alt='shopping cart' onClick={handleCartVisible} />
             <div>{cartItems.length}</div>
-        </>
+        </a>
     )
 }
