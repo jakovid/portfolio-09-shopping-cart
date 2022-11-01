@@ -28,7 +28,7 @@ export default function CheckOut() {
         let newCartItems = [...cartItems];
         let targetItem = cartItems.find(item => item.id == id);
         targetItem.quantity -= 1;
-        setCartItems(newCartItems);
+        (targetItem.quantity < 1 ? removeItem(id) : setCartItems(newCartItems));
     }
 
     function increaseQuantity(id){

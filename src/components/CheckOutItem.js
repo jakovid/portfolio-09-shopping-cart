@@ -14,7 +14,7 @@ export default function CheckOutItem({ item, removeItem, increaseQuantity, decre
         increaseQuantity(item.id)
     }
 
-    let totalPrice = item.price * item.quantity;
+    let totalPrice = Math.round(item.price * item.quantity * 100) / 100;
 
     return(
         <div className="checkOutItem">
