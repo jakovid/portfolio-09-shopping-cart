@@ -18,10 +18,16 @@ export default function CheckOut() {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(cartItems))
     }, [cartItems])
 
+    function removeItem(id){
+        let newCartItems = [...cartItems];
+        newCartItems = newCartItems.filter(targetItem => targetItem.id != id);
+        setCartItems(newCartItems);
+    }
+
     return(
         <div>
             <Header cartItems={cartItems} cartVisible={cartVisible} />
-            <PopulateCheckOut cartItems={cartItems} />
+            <PopulateCheckOut cartItems={cartItems} removeItem={removeItem} />
         </div>
     )
 }

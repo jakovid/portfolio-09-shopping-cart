@@ -27,6 +27,7 @@
 
 #cartContainer{
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -101,4 +102,13 @@
     position: absolute;
     left: 100px;
     top: 100px;
+}
+
+.removeItemBtn {
+    display: flex;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
 }

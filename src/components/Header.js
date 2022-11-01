@@ -1,5 +1,5 @@
 import React from "react";
-import ShoppingCart from "./ShoppingCart";
+import ShoppingCartBtn from "./ShoppingCartBtn";
 
 export default function Header({cartItems, cartVisible}){
     return(
@@ -13,7 +13,7 @@ export default function Header({cartItems, cartVisible}){
                 <div><a href="/shop">Products</a></div>
                 <div>Contact</div>
                 <div id="cartContainer">
-                    <ShoppingCart cartItems={cartItems} cartVisible={cartVisible} />
+                    <ShoppingCartBtn cartItems={cartItems} cartVisible={cartVisible} />
                 </div>
             </div>
         </div>

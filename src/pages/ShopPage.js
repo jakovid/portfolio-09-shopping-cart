@@ -6,7 +6,6 @@ import PopulateStore from "../components/PopulateStore";
 export default function ShopPage() {
     const [cartItems, setCartItems] = useState([{id: uuidv4(), name: 'Test Hat', price: 10.10, quantity: 2},{id: uuidv4(), name: 'Baby Hat', price: 9.99, quantity: 1}]);
     const LOCAL_STORAGE_KEY = 'shoppingCart.cartItems';
-    let cartVisible = false;
 
     useEffect(() => {
         const storedCartItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));

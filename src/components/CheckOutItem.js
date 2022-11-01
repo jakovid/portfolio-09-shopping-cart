@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function CheckOutItem({ item }){
+export default function CheckOutItem({ item, removeItem }){
+
+    function handleRemoveItem(){
+        removeItem(item.id);
+    }
+
     return(
         <>
             <div>
@@ -11,6 +16,7 @@ export default function CheckOutItem({ item }){
                 <div>{item.price}</div>
                 <div>{item.quantity}</div>
             </div>
+            <div className="removeItemBtn" onClick={handleRemoveItem} >Remove Item</div>
         </>
     )
 }

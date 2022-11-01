@@ -7,7 +7,6 @@ import HomePageMain from "../components/HomePageMain";
 export default function HomePage() {
     const [cartItems, setCartItems] = useState([{id: uuidv4(), name: 'Test Hat', price: 10.10, quantity: 2},{id: uuidv4(), name: 'Baby Hat', price: 9.99, quantity: 1}]);
     const LOCAL_STORAGE_KEY = 'shoppingCart.cartItems';
-    const cartVisible = false;
 
     useEffect(() => {
         const storedCartItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
@@ -20,7 +19,7 @@ export default function HomePage() {
 
     return(
         <div>
-            <Header cartItems={cartItems} cartVisible={cartVisible} />
+            <Header cartItems={cartItems} />
             <HomePageMain />
         </div>
     )
