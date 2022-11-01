@@ -23,7 +23,7 @@ export default function CheckOutItem({ item, removeItem, increaseQuantity, decre
             </div>
             <div>
                 <div>{item.name}</div>
-                <div>{totalPrice}</div>
+                <div>${totalPrice}</div>
                 <div className="quantityBox">
                     <div className="quantityBtn" onClick={handleItemDecrease} >-</div>
                     {item.quantity}
