@@ -41,7 +41,9 @@ export default function CheckOut() {
     return(
         <div>
             <Header cartItems={cartItems} cartVisible={cartVisible} />
-            <PopulateCheckOut cartItems={cartItems} removeItem={removeItem} decreaseQuantity={decreaseQuantity} increaseQuantity={increaseQuantity} />
+            <div id='checkOutContainer'>
+                <PopulateCheckOut cartItems={cartItems} removeItem={removeItem} decreaseQuantity={decreaseQuantity} increaseQuantity={increaseQuantity} />
+            </div>
         </div>
     )
 }

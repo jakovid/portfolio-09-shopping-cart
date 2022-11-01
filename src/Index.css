@@ -98,6 +98,13 @@
     cursor: pointer;
 }
 
+#checkOutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem
+}
+
 .checkOutItem {
     border: black 2px solid;
     display: grid;
