@@ -18,8 +18,9 @@ export default function ShopPage() {
 
     function addToCart (product) {
         const newCartItems = [...cartItems];
-        const newCartItem = {id:uuidv4, name: product.name, price: product.price, image: product.image, quantity: 1};
-        newCartItems.push(newCartItem);
+        const newCartItem = {id:uuidv4(), name: product.name, price: product.price, image: product.image, quantity: 1};
+        let existingItem = newCartItems.find(item => item.name === product.name);
+        (existingItem ? existingItem.quantity += 1 : newCartItems.push(newCartItem));
         setCartItems(newCartItems);
     }
     

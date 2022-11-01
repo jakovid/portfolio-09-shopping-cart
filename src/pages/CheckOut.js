@@ -24,10 +24,24 @@ export default function CheckOut() {
         setCartItems(newCartItems);
     }
 
+    function decreaseQuantity(id){
+        let newCartItems = [...cartItems];
+        let targetItem = cartItems.find(item => item.id == id);
+        targetItem.quantity -= 1;
+        setCartItems(newCartItems);
+    }
+
+    function increaseQuantity(id){
+        let newCartItems = [...cartItems];
+        let targetItem = cartItems.find(item => item.id == id);
+        targetItem.quantity += 1;
+        setCartItems(newCartItems);
+    }
+
     return(
         <div>
             <Header cartItems={cartItems} cartVisible={cartVisible} />
-            <PopulateCheckOut cartItems={cartItems} removeItem={removeItem} />
+            <PopulateCheckOut cartItems={cartItems} removeItem={removeItem} decreaseQuantity={decreaseQuantity} increaseQuantity={increaseQuantity} />
         </div>
     )
 }
